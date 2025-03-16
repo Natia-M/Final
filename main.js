@@ -19,3 +19,21 @@ function sliderFn() {
 }
 
 sliderFn();
+// first section//
+document.addEventListener("DOMContentLoaded", () => {
+  const progressBars = document.querySelectorAll(".progress");
+
+  function fillProgressBars() {
+    progressBars.forEach((bar) => {
+      const percentage = bar.getAttribute("data-percentage");
+      const barPosition = bar.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.2;
+
+      if (barPosition < screenPosition) {
+        bar.style.width = percentage + "%";
+      }
+    });
+  }
+
+  window.addEventListener("scroll", fillProgressBars);
+});
