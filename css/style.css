@@ -226,7 +226,8 @@
 }
 /* section 3 styles */
 .services {
-  margin-top: 120px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   max-width: fit-content;
 }
 .service-container {
