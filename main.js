@@ -37,3 +37,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", fillProgressBars);
 });
+//4//
+const slides = document.querySelectorAll(".slide-2");
+const dots = document.querySelectorAll(".dot");
+let currentSlide = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("show-2");
+    dots[i].classList.remove("active");
+  });
+
+  slides[index].classList.add("show-2");
+  dots[index].classList.add("active");
+}
+
+dots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    currentSlide = parseInt(dot.getAttribute("data-slide"));
+    showSlide(currentSlide);
+  });
+});
+
+// Show the first slide by default
+showSlide(currentSlide);
