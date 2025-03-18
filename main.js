@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", fillProgressBars);
 });
-//4//
+// section 4//
 const slides = document.querySelectorAll(".slide-2");
 const dots = document.querySelectorAll(".dot");
 let currentSlide = 0;
@@ -59,5 +59,20 @@ dots.forEach((dot) => {
   });
 });
 
-// Show the first slide by default
 showSlide(currentSlide);
+//section 5//
+function filterProjects(category) {
+  let projects = document.querySelectorAll(".project");
+
+  projects.forEach((project) => {
+    if (category === "all") {
+      project.classList.remove("hidden");
+    } else {
+      if (project.classList.contains(category)) {
+        project.classList.remove("hidden");
+      } else {
+        project.classList.add("hidden");
+      }
+    }
+  });
+}

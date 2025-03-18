@@ -222,8 +222,10 @@
 .icons-container {
   margin-top: 100px;
   display: flex;
+  gap: 10px;
 }
 .ic-2 {
+  background-color: rgb(239, 239, 239);
   margin-left: 10px;
 }
 .ic-2:hover {
@@ -401,4 +403,100 @@
 }
 .quote {
   max-width: 20px;
+}
+/* section 5 styles */
+.projects-sec {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pro-container {
+  max-width: 900px;
+  min-width: 900px;
+  min-height: 500px;
+  display: flex;
+}
+.sidebar {
+  max-width: 200px;
+  min-width: 200px;
+  width: 200px;
+  max-height: 300px;
+  padding: 20px;
+  background-color: #15263e;
+  color: white;
+  font-weight: 200;
+}
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  background: none;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}
+.sidebar button:hover {
+  text-decoration: underline;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  padding-top: 0;
+}
+.project {
+  max-height: 250px;
+  width: 200px;
+  height: 230px;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
+.pro-img {
+  max-width: 100%;
+  object-fit: fill;
+  transition: filter 0.3s ease-in-out;
+}
+.pro-header {
+  font-size: 35px;
+  text-align: center;
+  margin: 60px;
+}
+.project:hover {
+  filter: brightness(30%);
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  transition: filter 0.3s ease-in-out;
+}
+
+.project::before {
+  content: "❤";
+  font-size: 30px;
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.project:hover::before {
+  opacity: 1;
 }
