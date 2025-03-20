@@ -43,6 +43,7 @@ a {
 
 .overlay {
   position: absolute;
+  width: 400px;
   top: 30%;
   left: 60%;
 
@@ -51,12 +52,12 @@ a {
 }
 
 .overlay h2 {
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: 100;
 }
 
 .overlay h1 {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 45px;
 }
 
 .overlay p {
@@ -65,7 +66,7 @@ a {
 }
 
 .social-icons {
-  margin: 15px 0;
+  margin: 25px 0;
 }
 
 .social-icons a {
@@ -91,7 +92,6 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
-  font-family: Arial, sans-serif;
 }
 
 .about {
@@ -585,6 +585,7 @@ a {
   padding: 20px 60px;
   text-align: left;
   align-content: center;
+  color: #494949;
 }
 .div-3 {
   display: flex;
@@ -598,7 +599,27 @@ aside {
   padding: 20px;
 }
 .lil-text {
+  margin-top: 70px;
   font-size: 20px;
   text-align: center;
   color: #2ed279;
+}
+.art-logo {
+  max-width: 70px;
+  margin-bottom: 20px;
+}
+.in-k {
+  color: #888888;
+  font-size: 14px;
+}
+.art-hd {
+  color: #161616;
+  margin: 15px 0px;
+  font-size: 32px;
+}
+.art-butt {
+  margin: 15px 0px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
