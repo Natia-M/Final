@@ -60,10 +60,22 @@ dots.forEach((dot) => {
 });
 
 showSlide(currentSlide);
+
 //section 5//
 function filterProjects(category) {
   let projects = document.querySelectorAll(".project");
+  let buttons = document.querySelectorAll(".sidebar button");
 
+  // Remove 'selected' class from all buttons
+  buttons.forEach((btn) => btn.classList.remove("selected"));
+
+  // Add 'selected' class to the clicked button
+  let activeButton = document.querySelector(
+    `.sidebar button[onclick="filterProjects('${category}')"]`
+  );
+  if (activeButton) activeButton.classList.add("selected");
+
+  // Show or hide projects based on category
   projects.forEach((project) => {
     if (category === "all") {
       project.classList.remove("hidden");
