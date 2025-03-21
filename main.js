@@ -98,3 +98,40 @@ document.querySelectorAll(".team-box").forEach((box) => {
     box.querySelector(".team-inner").style.transform = "rotateY(0deg)";
   });
 });
+//section 7 //
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const website = document.getElementById("website").value;
+    const message = document.getElementById("message").value;
+
+    fetch("https://borjomi.loremipsum.ge/api/send-message", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, website, message }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status === 1) {
+          document.getElementById("responseMessage").innerText =
+            "Thank you for getting in touch! We appreciate you contacting us.";
+          document.getElementById("responseMessage").style.color = "green";
+          document.getElementById("contactForm").reset();
+        } else {
+          document.getElementById("responseMessage").innerText =
+            "Something went wrong. Please try again.";
+          document.getElementById("responseMessage").style.color = "red";
+        }
+      })
+      .catch((error) => {
+        document.getElementById("responseMessage").innerText =
+          "Error sending message!";
+        document.getElementById("responseMessage").style.color = "red";
+      });
+  });

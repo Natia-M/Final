@@ -674,3 +674,63 @@ aside {
   margin-top: 9px;
   font-size: 12px;
 }
+/* section 7 styles */
+
+.contacts {
+  max-height: 550px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/map.jpg") no-repeat center center/cover;
+  color: white;
+}
+.contact-section {
+  max-width: fit-content;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input-group input {
+  width: 32%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+#responseMessage {
+  margin-top: 10px;
+  font-size: 16px;
+}
