@@ -88,3 +88,13 @@ function filterProjects(category) {
     }
   });
 }
+//section 6 //
+document.querySelectorAll(".team-box").forEach((box) => {
+  box.addEventListener("mouseenter", () => {
+    box.querySelector(".team-inner").style.transform = "rotateY(180deg)";
+  });
+
+  box.addEventListener("mouseleave", () => {
+    box.querySelector(".team-inner").style.transform = "rotateY(0deg)";
+  });
+});
