@@ -99,9 +99,12 @@ document.querySelectorAll(".team-box").forEach((box) => {
   });
 });
 //section 7 //
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+  const modal = document.getElementById("successModal");
+  const closeButton = document.querySelector(".close");
+
+  form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const name = document.getElementById("name").value;
@@ -118,21 +121,23 @@ document
     })
       .then((response) => response.json())
       .then((data) => {
-        document.getElementById("successModal").style.display = "flex";
-        document.getElementById("contactForm").reset();
+        modal.style.display = "flex";
+        form.reset();
       })
       .catch((error) => {
         alert("Error sending message!");
       });
   });
 
-document.querySelector(".close").addEventListener("click", function () {
-  document.getElementById("successModal").style.display = "none";
-});
-
-window.addEventListener("click", function (event) {
-  const modal = document.getElementById("successModal");
-  if (event.target === modal) {
+  closeButton.addEventListener("click", function () {
     modal.style.display = "none";
-  }
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  modal.style.display = "none";
 });

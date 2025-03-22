@@ -715,7 +715,7 @@ textarea {
   font-size: 16px;
 }
 
-button {
+.but-con {
   background-color: transparent;
   border: 2px solid #e74c3c;
   color: #e74c3c;
@@ -725,7 +725,7 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+.but-con:hover {
   background-color: #e74c3c;
   color: white;
 }
@@ -773,4 +773,30 @@ button:hover {
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
+}
+/* footer styles */
+.foot-sec {
+  color: #ffffff;
+  background-color: #282828;
+  height: 350px;
+}
+.f-header {
+  text-align: center;
+  font-size: 45px;
+  padding-top: 70px;
+  padding-bottom: 35px;
+}
+.foot-p {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+.sec-rights {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: #171717;
+}
+.rights {
+  opacity: 60%;
 }
