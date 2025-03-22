@@ -109,7 +109,7 @@ document
     const website = document.getElementById("website").value;
     const message = document.getElementById("message").value;
 
-    fetch("https://borjomi.loremipsum.ge/api/send-message", {
+    fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -118,20 +118,21 @@ document
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.status === 1) {
-          document.getElementById("responseMessage").innerText =
-            "Thank you for getting in touch! We appreciate you contacting us.";
-          document.getElementById("responseMessage").style.color = "green";
-          document.getElementById("contactForm").reset();
-        } else {
-          document.getElementById("responseMessage").innerText =
-            "Something went wrong. Please try again.";
-          document.getElementById("responseMessage").style.color = "red";
-        }
+        document.getElementById("successModal").style.display = "flex";
+        document.getElementById("contactForm").reset();
       })
       .catch((error) => {
-        document.getElementById("responseMessage").innerText =
-          "Error sending message!";
-        document.getElementById("responseMessage").style.color = "red";
+        alert("Error sending message!");
       });
   });
+
+document.querySelector(".close").addEventListener("click", function () {
+  document.getElementById("successModal").style.display = "none";
+});
+
+window.addEventListener("click", function (event) {
+  const modal = document.getElementById("successModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
