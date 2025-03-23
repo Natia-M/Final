@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Orbitron:wght@400..900&family=Poppins:wght@800&family=Quicksand:wght@300..700&family=Sen:wght@400..800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 /* general stylees */
+body {
+  max-width: fit-content;
+}
 .grey {
   color: #555555;
 }
@@ -13,7 +17,12 @@
 a {
   text-decoration: none;
 }
+.bold {
+  font-size: bold;
+}
+
 /* header styles*/
+
 .slider-wrapper {
   width: 100%;
   height: 600px;
@@ -97,15 +106,16 @@ a {
 .about {
   position: relative;
   text-align: center;
-  font-weight: bold;
 }
 
 .number {
   display: block;
   font-size: 80px;
-  color: rgba(0, 0, 0, 0.1);
-  font-weight: bold;
+  color: rgba(11, 10, 10, 0.284);
   line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .text {
@@ -118,6 +128,9 @@ a {
 .name {
   font-size: 40px;
   font-weight: 1000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 .resume {
   font-size: 15px;
@@ -167,7 +180,6 @@ a {
 
 .skill p {
   font-size: 16px;
-  font-weight: bold;
   margin-bottom: 5px;
 }
 
@@ -759,6 +771,7 @@ textarea {
 }
 
 .modal-content {
+  position: relative;
   color: #000;
   background: white;
   padding: 20px;
@@ -769,10 +782,16 @@ textarea {
 }
 
 .close {
+  position: absolute;
+  background-color: #e93656;
+  top: -14px;
+  right: -7px;
   float: right;
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
+  border-radius: 100%;
+  padding: 0px 6px;
 }
 /* footer styles */
 .foot-sec {
@@ -782,9 +801,12 @@ textarea {
 }
 .f-header {
   text-align: center;
-  font-size: 45px;
+  font-size: 50px;
   padding-top: 70px;
   padding-bottom: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 .foot-p {
   max-width: 500px;
@@ -799,4 +821,14 @@ textarea {
 }
 .rights {
   opacity: 60%;
+}
+.f-imgs {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-top: 40px;
+}
+.f-img {
+  max-width: 25px;
 }
