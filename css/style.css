@@ -1,4 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Orbitron:wght@400..900&family=Poppins:wght@800&family=Quicksand:wght@300..700&family=Sen:wght@400..800&display=swap");
+@font-face {
+  font-family: "GlacialIndifference-Regular.ttf";
+  src: url("/fonts/GlacialIndifference-Bold.woff2") format("woff2"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Jaapokki-Regular.eot";
+  src: url("/fonts/Jaapokki-Regular.eot") format("eot"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Bold.woff";
+  src: url("/fonts/Montserrat-Bold.woff2") format("eot"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muli-Regular.eot";
+  src: url("/fonts/Muli-Regular.eot") format("eot"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-ExtraBold.ttf";
+  src: url("/fonts/Poppins-ExtraBold.ttf") format("eot"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +42,7 @@
 /* general stylees */
 body {
   max-width: fit-content;
+  font-family: "Jaapokki-Regular.eot";
 }
 .grey {
   color: #555555;
