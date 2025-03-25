@@ -1,0 +1,146 @@
+@media (max-width: 763px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  /* header (slider) */
+  .slider-wrapper {
+    width: 100%;
+    height: 200px;
+  }
+  .branding {
+    top: 0px;
+    padding: 0 10px;
+  }
+  .name {
+    font-size: 18px;
+  }
+  .resume {
+    font-size: 4px;
+  }
+  .number {
+    font-size: 40px;
+  }
+  .text {
+    font-size: 15px;
+    margin-top: -30px;
+  }
+  .overlay {
+    left: 50%;
+  }
+  .overlay h1 {
+    font-size: 20px;
+  }
+  .overlay h2 {
+    font-size: 12px;
+    font-weight: 100;
+  }
+  .overlay p {
+    font-size: 10px;
+    margin: 5px 0;
+  }
+  .social-icons img {
+    width: 12px;
+    height: 12px;
+  }
+  .social-icons {
+    margin: 8px 0;
+  }
+  .clients p {
+    font-size: 12px;
+  }
+  .clients {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    text-align: right;
+  }
+  /* section 1 */
+  .portrait {
+    max-width: 160px;
+    margin-right: 140px;
+    border: 5px solid #848484;
+    padding: 10px;
+    border-style: dashed;
+  }
+  .section-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: unset;
+    margin-top: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .box-1 {
+    max-width: 100%;
+  }
+  .ux-p {
+    text-align: left;
+  }
+  .ux-pp {
+    text-align: left;
+  }
+  .box-3 {
+    max-width: 100%;
+    padding-top: 10px;
+    margin: 0;
+  }
+  .icons-container {
+    margin-top: 30px;
+  }
+  .hire-butt {
+    font-size: 10px;
+    padding: 10px 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  h3 {
+    text-align: left;
+  }
+  /* contact container */
+  .contact-container {
+    margin-top: 50px;
+    padding: 20px;
+    gap: 30px;
+    flex-direction: column;
+    border: 5px solid #e93656;
+    border-radius: 30px;
+    border-style: dashed;
+    width: 100%;
+  }
+  /* services */
+
+  .service-container {
+    margin-left: unset;
+    margin-right: unset;
+    max-width: 100%;
+    justify-content: space-around;
+    gap: unset;
+    row-gap: 20px;
+  }
+  .box {
+    border-radius: 15px;
+  }
+  /* slider 2 */
+  .slider-2 {
+    max-height: 300px;
+    height: 200px;
+  }
+  .dots {
+    margin-top: -24%;
+    right: 5%;
+  }
+  .slider-img {
+    max-width: 80px;
+  }
+  .slider-tex {
+    padding: unset;
+  }
+  .overlay-2 {
+    max-width: 400px;
+    left: 5%;
+  }
+}
