@@ -143,4 +143,32 @@
     max-width: 400px;
     left: 5%;
   }
+
+  .div-3 {
+    flex-direction: column;
+  }
+  aside {
+    writing-mode: unset;
+    font-size: unset;
+
+    max-width: unset;
+  }
+  .art-img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .art-div {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .art-logo {
+    max-width: 20px;
+  }
+  .art-hd {
+    font-size: 15px;
+    margin: 5px;
+  }
+  .in-k {
+    font-size: unset;
+  }
 }
