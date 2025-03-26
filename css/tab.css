@@ -92,7 +92,7 @@
 
   .sidebar {
     width: 100%;
-    min-width: 800px;
+
     justify-content: space-between;
     display: flex;
     max-width: 1200px;
@@ -111,7 +111,7 @@
     object-fit: cover;
   }
   .art-div {
-    padding: 5px;
+    padding: 25px;
     font-size: 10px;
   }
   .art-logo {
@@ -124,7 +124,7 @@
   .in-k {
     font-size: unset;
   }
-  .aside {
-    padding: 5px;
+  .art-aside {
+    padding: 10px;
   }
 }
