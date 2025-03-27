@@ -83,6 +83,11 @@
     max-height: 400px;
   }
   /* section 5 */
+  .projects-sec {
+    max-width: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
   .pro-header {
     font-size: 30px;
   }
@@ -97,13 +102,12 @@
   .pro-img {
     max-width: 200px;
   }
-
   .sidebar {
     width: 100%;
-
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: flex;
-    max-width: 1200px;
+    max-width: 1024px;
+    flex-wrap: wrap;
   }
 
   .sidebar button.selected::before {
