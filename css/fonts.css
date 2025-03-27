@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "GlacialIndifference-Regular.ttf";
+  src: url("/fonts/GlacialIndifference-Regular.woff") format("woff2"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GlacialIndifference-Bold.ttf";
+  src: url("/fonts/GlacialIndifference-Bold.ttf") format("woff2"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto-Light.woff";
+  src: url("/fonts/Roboto-Light.woff") format("woff"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Jaapokki-Regular.ttf";
+  src: url("/fonts/Jaapokki-Regular.ttf") format("ttf"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Bold.woff";
+  src: url("/fonts/Montserrat-Bold.woff2") format("eot"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muli-Regular.woff";
+  src: url("/fonts/Muli-Regular.woff") format("woff"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-ExtraBold.woff";
+  src: url("/fonts/Poppins-ExtraBold.woff") format("woff"),
+    url("/fonts/myfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.overlay {
+  font-family: "GlacialIndifference-Regular.ttf";
+}
+.branding,
+h3,
+.skills,
+.hire-butt,
+.lil-text {
+  font-family: "GlacialIndifference-Bold.ttf";
+}
+.overlay h2 {
+  font-weight: 100;
+}
+.ux-pp,
+.ux-p,
+.contact-container,
+.services,
+.second-slider,
+.projects-sec,
+.article-container,
+.sec-rights {
+  font-family: "Muli-Regular.woff";
+}
+.teams-container,
+.cont-p,
+.foot-p {
+  font-family: "Roboto-Light.woff";
+}
+.cont-h {
+  font-family: "Jaapokki-Regular.ttf";
+}
+.f-header {
+  font-family: "Poppins-ExtraBold.woff";
+}

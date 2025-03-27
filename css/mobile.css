@@ -10,7 +10,7 @@
     height: 200px;
   }
   .branding {
-    top: 0px;
+    top: 5px;
     padding: 0 10px;
   }
   .name {
@@ -163,6 +163,12 @@
     height: unset;
     justify-content: space-evenly;
     padding: 10px;
+  }
+  .projects {
+    min-height: 260px;
+  }
+  .overlay-3 {
+    display: none;
   }
   /* slider 2 */
   .slider-2 {

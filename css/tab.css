@@ -6,9 +6,12 @@
   }
 
   /* header (slider) */
+  .name {
+    font-size: 30px;
+  }
   .overlay {
-    min-width: 200px;
-    max-width: 220px;
+    min-width: 400px;
+    left: 53%;
   }
   .slider-wrapper {
     width: 100%;
@@ -17,10 +20,15 @@
   .clients {
     display: none;
   }
+  .branding {
+    top: 5px;
+    font-size: smaller;
+  }
   /* section 1 */
   .section-container {
     max-width: unset;
     padding: unset;
+    margin-top: 30px;
   }
   .box-1 {
     padding-top: 30px;
