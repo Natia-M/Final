@@ -1,7 +1,7 @@
 @font-face {
   font-family: "GlacialIndifference-Regular";
   src: url("../fonts/GlacialIndifference-Regular.woff") format("woff"),
-    url("../fonts/GlacialIndifference-Regular.ttf") format("truetype");
+    url("../fonts/GlacialIndifference-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }

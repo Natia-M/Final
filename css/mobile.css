@@ -59,7 +59,7 @@
   /* section 1 */
 
   .section-container {
-    padding: unset;
+    padding: 20px;
     padding-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -207,6 +207,7 @@
 
   .div-3 {
     flex-direction: column;
+    justify-content: center;
   }
   aside {
     writing-mode: unset;
@@ -223,7 +224,7 @@
     font-size: 10px;
   }
   .art-logo {
-    max-width: 20px;
+    display: none;
   }
   .art-hd {
     font-size: 15px;
@@ -255,12 +256,16 @@
     max-height: 80px;
   }
   .team-img {
-    max-width: 80px;
+    max-width: 60px;
   }
   .team-p {
     font-size: 5px;
   }
   h7 {
     margin-top: 15px;
+  }
+  .team-back {
+    padding: 4px;
+    font-size: 4px;
   }
 }
