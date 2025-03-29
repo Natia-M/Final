@@ -34,6 +34,8 @@
     padding-top: 30px;
     max-width: 200px;
     text-align: right;
+    padding-left: unset;
+    padding-right: unset;
   }
   .portrait {
     max-width: 230px;
@@ -57,6 +59,10 @@
     font-size: 10px;
     padding: 10px 25px;
     margin-top: 30px;
+  }
+  .box-3 {
+    padding-left: unset;
+    padding-right: unset;
   }
   /* section 3 */
   .service-container {

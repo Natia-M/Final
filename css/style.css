@@ -168,6 +168,7 @@ a {
   width: 100%;
   max-width: 400px;
   margin: 20px 0;
+  padding-right: 120px;
 }
 
 .skill {
@@ -199,6 +200,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "first second third";
+  justify-items: center;
 }
 .portrait {
   grid-area: second;
@@ -216,6 +218,8 @@ a {
   padding-top: 60px;
   max-width: 350px;
   text-align: right;
+  padding-left: 50px;
+  padding-right: 10px;
 }
 .numb {
   margin-left: 10px;
@@ -224,6 +228,7 @@ a {
 .box-3 {
   padding-top: 40px;
   color: #555555;
+  padding-left: 10px;
 }
 .hire-butt {
   font-size: 15px;
